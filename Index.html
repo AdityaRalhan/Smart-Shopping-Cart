@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billing System</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Billing System</h1>
+        <div class="input-container">
+            <input type="text" id="scanItem" placeholder="Enter product ID">
+        </div>
+        <div class="items">
+            <button onclick="addToBill()">Add item to bill</button>
+            <button onclick="deleteFromBill()">Delete item from bill</button>
+        </div>
+        <div class="product-info">
+            <h3><i>Product Info</i></h3>
+            <p id="productName">Name: </p>
+            <p id="productPrice">Price: </p>
+            <p id="productWeight">Weight/Quantity: </p>
+        </div>
+        <div class="bill">
+            <h3><i>Bill</i></h3>
+            <ol id="billList"></ol>
+            <p>Total: Rs <span id="totalAmount">0.00</span></p>
+            <div class="print">
+                <button onclick="printBill()">Print Bill</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="printModal" class="modal">
+        <div class="modal-content">
+            <h2>Bill Summary</h2>
+            <!-- Bill items list -->
+            <div class="bill-summary">
+                <ul id="printBillList" class="bill-items"></ul>
+                <h2 class="total-amount">Total: Rs <span id="printTotalAmount">0.00</span></h2>
+            </div>
+
+            <!-- QR Code for payment -->
+            <div class="qr-section">
+                <img id="qrCode" alt="QR Code" src="https://via.placeholder.com/150">
+                <p class="qr-text">Scan to pay the bill</p>
+            </div>
+
+            <!-- Close Button -->
+            <button class="modal-close-btn" onclick="closeModal()">Close</button>
+        </div>
+    </div>
+
+    <script src="Web.js"></script>
+</body>
+
+</html>
