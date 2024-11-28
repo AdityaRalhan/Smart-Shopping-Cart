@@ -6,59 +6,53 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(205, 147, 57, 1) 0%, rgba(13, 7, 1, 1) 58%, rgba(20, 12, 1, 1) 100%, rgba(121, 90, 9, 1) 100%);
+    background: linear-gradient(90deg, #b0e0e6 0%, #87ceeb 100%);
 }
 
 .container {
-    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(67, 49, 21, 1) 63%, rgba(121, 90, 9, 1) 100%, rgba(0, 212, 255, 1) 100%);
+    background: linear-gradient(90deg, #b0e0e6, #add8e6);
     padding: 70px;
     border-radius: 5px;
-    box-shadow: rgba(231, 149, 17, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     width: 300px;
     text-align: center;
     justify-content: center;
     align-items: center;
-
 }
 
 h1,
 h3 {
-    color: #f3cba5;
+    color: #1c4966;
     text-align: center;
+    size: 20px;
 }
 
 p {
-    color: #cb8849;
+    color: #5d7791;
     size: 20px;
     text-align: left;
-
 }
 
 .input-container {
     display: flex;
     justify-content: center;
-    /* Centers horizontally */
     align-items: center;
-    /* Centers vertically if needed */
     height: 20vh;
-    /* Adjust height as needed */
 }
 
-/* Style the input field */
 #scanItem {
     width: 200px;
     padding: 10px;
     font-size: 18px;
-    border: 2px solid #e6d21b;
+    border: 2px solid #4682b4;
     border-radius: 5px;
     outline: none;
     text-align: center;
 }
 
-/* Add a focus effect */
 #scanItem:focus {
-    border-color: #dda91b;
-    box-shadow: 0 0 5px rgba(45, 31, 2, 0.5);
+    border-color: #5f9ea0;
+    box-shadow: 0 0 5px rgba(70, 130, 180, 0.5);
 }
 
 .items {
@@ -66,7 +60,7 @@ p {
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: #6d3704;
+    color: #4a6f89;
 }
 
 .product-info {
@@ -74,7 +68,7 @@ p {
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: #f3cba5;
+    color: #1c4966;
 }
 
 .bill {
@@ -82,7 +76,7 @@ p {
     justify-content: center;
     align-items: center;
     text-align: left;
-    color: #a56c16;
+    color: #356684;
 }
 
 .print {
@@ -93,8 +87,8 @@ p {
 }
 
 button {
-    background-color: #453953;
-    color: #f3cba5;
+    background-color: #4682b4;
+    color: #ffffff;
     border: none;
     padding: 10px 15px;
     margin-top: 10px;
@@ -103,12 +97,11 @@ button {
 }
 
 button:hover {
-    background-color: #453953;
+    background-color: #5f9ea0;
 }
 
 .modal {
     display: none;
-    /* Hidden by default, shown with JavaScript */
     position: fixed;
     z-index: 1000;
     left: 0;
@@ -119,7 +112,7 @@ button:hover {
 }
 
 .modal-content {
-    background-color: #794b06;
+    background-color: #b0e0e6;
     margin: 10% auto;
     padding: 20px;
     border-radius: 8px;
@@ -127,19 +120,19 @@ button:hover {
     max-width: 600px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
-    background: linear-gradient(90deg, rgba(1, 11, 18, 1) 0%, rgba(194, 116, 26, 1) 100%, rgba(12, 95, 145, 1) 100%, rgba(13, 9, 1, 1) 100%);
+    background: linear-gradient(90deg, #b0e0e6, #87ceeb);
 }
 
 .modal-title {
     font-size: 24px;
     margin-bottom: 20px;
-    color: #333;
+    color: #1c4966;
 }
 
 /* Bill Summary Section */
 .bill-summary {
     margin-bottom: 20px;
-    color: rgb(183, 124, 30);
+    color: #356684;
 }
 
 .bill-items {
@@ -151,7 +144,7 @@ button:hover {
 
 .bill-items li {
     font-size: 18px;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #87ceeb;
     padding: 5px 0;
 }
 
@@ -159,8 +152,7 @@ button:hover {
     font-size: 20px;
     font-weight: bold;
     margin-top: 10px;
-    color: rgb(0, 0, 0);
-
+    color: #1c4966;
 }
 
 /* QR Code Section */
@@ -177,15 +169,14 @@ button:hover {
 
 .qr-text {
     font-size: 20px;
-    color: rgb(45, 28, 3);
+    color: #4a6f89;
     text-align: center;
-
 }
 
 /* Close Button */
 .modal-close-btn {
-    background-color: #0f0801;
-    color: rgb(239, 172, 70);
+    background-color: #4682b4;
+    color: #ffffff;
     border: none;
     padding: 10px 20px;
     font-size: 16px;
@@ -195,10 +186,10 @@ button:hover {
 }
 
 .modal-close-btn:hover {
-    background-color: #332507;
+    background-color: #5f9ea0;
 }
 
 h2 {
-    color: black;
+    color: #1c4966;
     size: 20px;
 }
